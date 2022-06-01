@@ -11,17 +11,10 @@ class EmptyHome extends StatelessWidget {
     return Scaffold(
         body: Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            'لا منتجات نتنهي صلاحيتها خلال',
-            style: TextStyle(
-              color: Color(0xFF1321E0),
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-            ),
-          ),
-          Text(
-            'الاسبوع القادم حدث الصفحة',
+            'لا منتجات نتنهي صلاحيتها ',
             style: TextStyle(
               color: Color(0xFF1321E0),
               fontWeight: FontWeight.bold,
@@ -32,7 +25,7 @@ class EmptyHome extends StatelessWidget {
             text: TextSpan(
               children: [
                 TextSpan(
-                  text: 'أضف شيء',
+                  text: 'أضف الان',
                   style: const TextStyle(color: Color(0xFF1321E0)),
                   recognizer: TapGestureRecognizer()
                     ..onTap = () => Navigator.push(
