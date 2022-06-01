@@ -16,13 +16,10 @@ class NoteCardWidget extends StatelessWidget {
     const color = Colors.white;
     final time = item.expaireDate;
     late DateTime expaireDate;
-    var year = DateTime(DateTime.now().year) as int;
-    var month = DateTime(DateTime.now().month) as int;
-    var day = DateTime(DateTime.now().day) as int;
     try {
       expaireDate = DateTime.parse(item.expaireDate);
     } on FormatException {
-      expaireDate = DateTime(year, month, day);
+      expaireDate = DateTime.now();
     }
     final dateColor;
 
